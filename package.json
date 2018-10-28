@@ -9,8 +9,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "zip" : "zip --password=pass result.zip -r raw",
-    "unzip": "cd raw && unzip -j -P pass ../result.zip",
+    "zip" : "zip --password=$(cat .pass) result.zip -r raw",
+    "unzip": "cd raw && unzip -j -P $(cat ../pass) ../result.zip",
     "pdf":   "markdown-pdf -f A4"
   },
   "repository": {
