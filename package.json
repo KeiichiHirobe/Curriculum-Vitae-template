@@ -1,0 +1,26 @@
+{
+  "name": "curriculum-vitae-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "markdown-pdf": "^9.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "zip" : "zip --password=pass result.zip -r raw",
+    "unzip": "cd raw && unzip -j -P pass ../result.zip",
+    "pdf":   "markdown-pdf -f A4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeiichiHirobe/Curriculum-Vitae-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KeiichiHirobe/Curriculum-Vitae-template/issues"
+  },
+  "homepage": "https://github.com/KeiichiHirobe/Curriculum-Vitae-template#readme"
+}
